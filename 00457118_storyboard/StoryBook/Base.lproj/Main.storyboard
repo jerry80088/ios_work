@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oaU-Sw-zx2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--目錄-->
+        <scene sceneID="R0Z-CS-xPa">
+            <objects>
+                <viewController id="FM4-5j-O6V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drR-xt-eS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="15e9d55ede900000bad1" translatesAutoresizingMaskIntoConstraints="NO" id="nwD-jI-rdz">
+                                <rect key="frame" x="0.0" y="102" width="375" height="710"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npb-PH-ka0">
+                                <rect key="frame" x="59" y="145" width="256" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="代表隊簡介">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sLh-QO-ZZ0" kind="show" id="s7F-Zy-O0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-bZ-7id">
+                                <rect key="frame" x="59" y="267" width="256" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="隊員介紹">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.7213221299" green="0.46941928820000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T4m-zO-WMh" kind="show" id="J71-Qg-7Ko"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81959190770000001" blue="0.47063645170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.90210143885685823" blue="0.73923516659569766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="V8S-Kw-wiz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="目錄" id="H9I-ak-laY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI7-Jc-zI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3169" y="166"/>
+        </scene>
+        <!--隊員介紹-->
+        <scene sceneID="e3W-PL-D8U">
+            <objects>
+                <tableViewController id="T4m-zO-WMh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oVD-7q-jGH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.37724037640000002" blue="0.38889797920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="yUT-HV-Koi">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="AWE-Yl-2Ya">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AWE-Yl-2Ya" id="Kkz-dR-AAa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１７" translatesAutoresizingMaskIntoConstraints="NO" id="AX8-wk-ACz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-Wf-aVk">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="黃培閎"/>
+                                                    <connections>
+                                                        <segue destination="q3h-ZS-1sX" kind="show" id="veL-Pp-qQq"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.89547479997488166" blue="0.80558759855194151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="OaG-0Z-LQO">
+                                        <rect key="frame" x="0.0" y="229" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OaG-0Z-LQO" id="93c-eO-S0y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１０" translatesAutoresizingMaskIntoConstraints="NO" id="vM2-9c-hyL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-b6-PO4">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="吳宗軒"/>
+                                                    <connections>
+                                                        <segue destination="jvI-uz-UJ7" kind="show" id="N4C-KS-qO3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.81094998492848025" blue="0.70396919658333745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="V6e-dK-iXy">
+                                        <rect key="frame" x="0.0" y="458" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V6e-dK-iXy" id="d3h-u9-9os">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１９" translatesAutoresizingMaskIntoConstraints="NO" id="lcm-wE-YEG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lz-iK-RZI">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="陳建禎"/>
+                                                    <connections>
+                                                        <segue destination="sb0-fX-Hsn" kind="show" id="Who-my-sgb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.89547480000000002" blue="0.80558759859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="UyD-Oo-6rB">
+                                        <rect key="frame" x="0.0" y="687" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UyD-Oo-6rB" id="O2S-5d-l4u">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１１" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-rE-xiJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ee-g5-kaZ">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="黃建逢"/>
+                                                    <connections>
+                                                        <segue destination="i6v-ao-MaX" kind="show" id="UZQ-HU-zIm"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.81094998490000003" blue="0.70396919660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="lpw-E9-Ote">
+                                        <rect key="frame" x="0.0" y="916" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lpw-E9-Ote" id="m4u-pu-eDj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０２" translatesAutoresizingMaskIntoConstraints="NO" id="Rq2-oy-Ze2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKW-Id-Ehx">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="劉鴻杰"/>
+                                                    <connections>
+                                                        <segue destination="ZAv-bm-XcD" kind="show" id="nyT-OH-3AB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.89547480000000002" blue="0.80558759859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="bkT-fy-9ln">
+                                        <rect key="frame" x="0.0" y="1145" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bkT-fy-9ln" id="FaB-nG-HSt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０８" translatesAutoresizingMaskIntoConstraints="NO" id="n6H-2v-FMA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCX-kz-Lhj">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="張良皓"/>
+                                                    <connections>
+                                                        <segue destination="lHt-hj-iz1" kind="show" id="vdk-GC-fzS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.81094998490000003" blue="0.70396919660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="fPp-py-Jlw">
+                                        <rect key="frame" x="0.0" y="1374" width="375" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fPp-py-Jlw" id="afx-3P-9bD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０５" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-In-NI4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lt-7o-9KY">
+                                                    <rect key="frame" x="183" y="81" width="176" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="董力億"/>
+                                                    <connections>
+                                                        <segue destination="CsN-QW-MVo" kind="show" id="Fe4-5f-pTL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.89547480000000002" blue="0.80558759859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="T4m-zO-WMh" id="hbo-5L-qvF"/>
+                            <outlet property="delegate" destination="T4m-zO-WMh" id="dKQ-hG-9sJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="隊員介紹" id="PHe-9X-uuU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04H-2F-vri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501.5999999999999" y="867.48768472906409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IcP-uV-JNY">
+            <objects>
+                <viewController id="q3h-ZS-1sX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3LP-Lu-vKn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：黃培閎 背號：１７ 球衣顯示：HUANG. P. H. 生日：1990年9月17日（27歲） 身高：１８８ 體重：７４ 攻擊點：３２５ 攔網點：３２１ 位置：舉球員" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIf-WX-Cng">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１７" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Qp-3i6">
+                                <rect key="frame" x="67" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496123371817" green="1" blue="0.92341835257748839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8Km-rv-jd8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPs-TJ-0cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="1577"/>
+        </scene>
+        <!--代表隊簡介-->
+        <scene sceneID="jAh-j2-Iit">
+            <objects>
+                <viewController id="sLh-QO-ZZ0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onB-NP-ZI3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-03-14 上午11.15.29" translatesAutoresizingMaskIntoConstraints="NO" id="bmG-b5-GEM">
+                                <rect key="frame" x="0.0" y="388" width="375" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="中華台北男子排球代表隊 是中華民國的 國家男子排球代表隊 參加國際比賽使用的名稱 由中華民國排球協會 負責組隊與管理 中華男排 目前由陳克舟擔任總教練 教練為鄭逸翔 訓練員為蔡家豪" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-tI-jIF">
+                                <rect key="frame" x="31" y="225" width="312" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.86812823525233918" blue="0.70194428913775342" alpha="0.88629936733128833" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="中華隊" translatesAutoresizingMaskIntoConstraints="NO" id="fPD-oA-nnI">
+                                <rect key="frame" x="101" y="96" width="172" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94715369806668681" blue="0.83530777614746565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ipu-4m-FQ8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="代表隊簡介" id="DXw-bJ-NRi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9d-7e-1Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4041" y="166"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="6oE-Z6-cTd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ac-Ee-wfb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" id="G0I-7M-pbA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5WE-me-njP">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FM4-5j-O6V" kind="relationship" relationship="rootViewController" id="L2s-Q5-yZq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLO-Wa-XER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="166"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="N4u-GD-Yzp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oaU-Sw-zx2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CCj-Hu-vvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Ac-Ee-wfb" kind="relationship" relationship="viewControllers" id="R3Z-bC-FTt"/>
+                        <segue destination="sLh-QO-ZZ0" kind="relationship" relationship="viewControllers" id="fq3-nn-HSP"/>
+                        <segue destination="T4m-zO-WMh" kind="relationship" relationship="viewControllers" id="CUM-bH-ylz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLO-5Y-aWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Un-Ut-juX">
+            <objects>
+                <viewController id="CsN-QW-MVo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N7t-bE-6f0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：董力億 背號：０５ 球衣顯示：TUNG. L. Y. 生日：1994年10月10日（23歲） 身高：１６５ 體重：６２ 攻擊點：無 攔網點：無 位置：自由球員" translatesAutoresizingMaskIntoConstraints="NO" id="Xwc-KO-fxE">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０５" translatesAutoresizingMaskIntoConstraints="NO" id="3Dt-wi-EXA">
+                                <rect key="frame" x="66" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Lwr-3m-QV6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jk5-Tg-aDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="1577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BRN-Gp-XDQ">
+            <objects>
+                <viewController id="lHt-hj-iz1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qd0-Q7-kQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：張良皓 背號：０８ 球衣顯示：CHANG. L. H. 生日：1994年7月7日（23歲） 身高：１９６ 體重：８６ 攻擊點：３２０ 攔網點：３１０ 位置：中間手" translatesAutoresizingMaskIntoConstraints="NO" id="roX-3R-zwX">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０８" translatesAutoresizingMaskIntoConstraints="NO" id="jWG-qh-WOc">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="R3X-1H-N7L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQ9-Mn-IJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3812" y="1577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M11-WQ-jC5">
+            <objects>
+                <viewController id="ZAv-bm-XcD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tn-uz-B8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：劉鴻杰 背號：０２ 球衣顯示：LIU. H. J. 生日：1993年11月10日（24歲） 身高：１８９ 體重：８０ 攻擊點：３２７ 攔網點：３２０ 位置：中間手" translatesAutoresizingMaskIntoConstraints="NO" id="Aw9-V5-Pua">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="０２" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-J6-0Tc">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hmT-ml-bh4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvS-jD-GH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086" y="1577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MtR-ZT-Pj8">
+            <objects>
+                <viewController id="i6v-ao-MaX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOL-qk-D5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：黃建逢 背號：１１ 球衣顯示：HUANG. C. F. 生日：1990年12月31日（27歲） 身高：１９５ 體重：８２ 攻擊點：３４５ 攔網點：３３２ 位置：主攻手" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-aA-rd1">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１１" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-v8-FCT">
+                                <rect key="frame" x="71" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KNa-cj-8Le"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMd-O8-HgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="1577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zct-bl-vkC">
+            <objects>
+                <viewController id="sb0-fX-Hsn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTX-t7-hqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：陳建禎 背號：１９ 球衣顯示：CHEN. C. C. 生日：1989年11月20日（28歲） 身高：１８８ 體重：８７ 攻擊點：３３８ 攔網點：３２５ 位置：主攻手" translatesAutoresizingMaskIntoConstraints="NO" id="jqk-rq-8kl">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１９" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-pw-NZG">
+                                <rect key="frame" x="67" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xAv-AZ-dHK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8A-RN-w7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="1577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x9F-QC-Deu">
+            <objects>
+                <viewController id="jvI-uz-UJ7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3O5-3X-Ew2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="姓名：吳宗軒 背號：１０ 球衣顯示：WU. T. H 生日：1994年7月9日（23歲） 身高：１８５ 體重：７５ 攻擊點：３２５ 攔網點：３００ 位置：副攻手" translatesAutoresizingMaskIntoConstraints="NO" id="p49-Qn-1Hv">
+                                <rect key="frame" x="32" y="500" width="319" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90210143890000005" blue="0.73923516659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１０" translatesAutoresizingMaskIntoConstraints="NO" id="40G-de-94a">
+                                <rect key="frame" x="67" y="88" width="240" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99849496120000003" green="1" blue="0.92341835260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ZKE-b6-7Fs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chM-FQ-c52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="1577"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="15e9d55ede900000bad1" width="199" height="120"/>
+        <image name="中華隊" width="148" height="117"/>
+        <image name="螢幕快照 2018-03-14 上午11.15.29" width="241" height="158"/>
+        <image name="０２" width="300" height="400"/>
+        <image name="０５" width="300" height="400"/>
+        <image name="０８" width="300" height="400"/>
+        <image name="１０" width="300" height="400"/>
+        <image name="１１" width="300" height="400"/>
+        <image name="１７" width="300" height="400"/>
+        <image name="１９" width="300" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="s7F-Zy-O0Q"/>
+        <segue reference="J71-Qg-7Ko"/>
+    </inferredMetricsTieBreakers>
+</document>

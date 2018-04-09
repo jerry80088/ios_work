@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VFu-p2-cX3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4XR-Rd-SfM">
+            <objects>
+                <viewController id="VFu-p2-cX3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cHp-Om-ick">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2308161376_2fc186fb19" highlightedImage="61c30d47jw1eujosmcojpj20hs0vk7af" translatesAutoresizingMaskIntoConstraints="NO" id="bBW-PF-Lvc">
+                                <rect key="frame" x="0.0" y="69" width="375" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="30020272_1877561492256406_684276809_n" translatesAutoresizingMaskIntoConstraints="NO" id="PFS-fx-RZp">
+                                <rect key="frame" x="209" y="204" width="227" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="我想多了解排球" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-jL-1XM">
+                                <rect key="frame" x="116" y="251" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="R5P-e1-rdZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z4u-Vm-Txg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlO-vb-IFt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2308161376_2fc186fb19" width="250" height="166"/>
+        <image name="30020272_1877561492256406_684276809_n" width="360" height="357"/>
+        <image name="61c30d47jw1eujosmcojpj20hs0vk7af" width="220" height="390"/>
+    </resources>
+</document>
